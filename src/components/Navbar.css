@@ -1,0 +1,56 @@
+nav {
+    padding: 0.5% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #4CAF50;
+    color: #fff !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+nav .cart {
+    cursor: pointer;
+    position: relative;
+}
+
+.cartItem {
+    min-width: 30px;
+    min-height: 30px;
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    background-color: #ff0000f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+@media (max-width:700px) {
+    nav {
+        justify-content: space-around;
+        gap: 10px;
+    }
+}

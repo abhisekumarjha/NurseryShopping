@@ -1,0 +1,80 @@
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #0000001d, #00000090), url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.LandingPage_content {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    gap: 7px;
+    backdrop-filter: blur(7px);
+    border-radius: 45px 0px 95px 0px;
+    box-shadow: 0px 0px 30px #ffffff25;
+    color: #f7f7f7;
+}
+
+.LandingPage_content h1 {
+    font-size: 2.25rem;
+}
+
+.LandingPage_content p {
+    font-size: 18px;
+    margin: 1rem 0;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background-color: #4caf50;
+    margin: 10px 0;
+}
+
+.LandingPageContentLeft {
+    flex-basis: 30%;
+}
+
+.getStartedBtn {
+    padding: 15px 25px;
+    background-color: #4caf50;
+    color: #f7f7f7 !important;
+    border: none;
+    border-radius: 7px;
+    color: inherit;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 18px;
+    transition: background-color 0.25s ease-in;
+}
+
+.get-started-button:hover {
+    background-color: #4caf5090;
+}
+
+.LandingPageContentRight {
+    flex-basis: 70%;
+}
+
+@media (max-width:700px) {
+    .LandingPage_content {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .LandingPageContentLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .LandingPageContentRight {
+        text-align: center;
+    }
+}
